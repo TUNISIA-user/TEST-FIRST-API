@@ -13,7 +13,7 @@
     dotenv.config(); // Load environment variables
 
     const app = express();
-    const port = process.env.PORT  
+    const port = process.env.PORT  || 10000
 
     // MongoDB connection string (ensure <db_password> is replaced or use environment variables)
     const connection_url =process.env.BASEURL
